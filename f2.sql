@@ -93,14 +93,14 @@ VALUES
 
 CREATE TABLE job_history (
     employee_id INT ,
-    st_date DATE,
+    start_date DATE,
     end_date DATE,
     job_id INT,
     FOREIGN KEY (employee_id) REFERENCES employee(employee_id),
     FOREIGN KEY (job_id) REFERENCES jobs(job_id)
 );
 
-INSERT INTO Job_History (employee_id, st_date, end_date ,  job_id)
+INSERT INTO Job_History (employee_id, start_date, end_date ,  job_id)
 VALUES
 (1, '2020-01-01', '2023-01-14', 1),
 (2, '2019-05-01', '2023-02-19', 2),
