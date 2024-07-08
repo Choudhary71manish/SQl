@@ -84,11 +84,11 @@ CREATE TABLE employee (
 
 INSERT INTO Employee (employee_id, f_name, l_name, email, phone, hire_date,job_id,salary, Commission,manager_id,dept_id)
 VALUES
-(1, 'Vikas', 'Godiya', 'vikasgodiya@gmail.com', '9694643401', '2023-01-15', 1, 50000.00, NULL, NULL, 70),
-(2, 'Ashi', 'Phulwani', 'ashiphulwani@gmail.com', '7300140241', '2023-02-20', 2, 60000.00, 2000.00, 1, 71),
-(3, 'Vishal', 'Soni', 'vishalsoni@gmail.com', '7073340691', '2023-03-10', 3, 70000.00, NULL, 1, 71),
-(4, 'Anish', 'Chouhan', 'anishchouhan@gmail.com', '8954125478', '2023-04-05', 1, 55000.00, 1500.00, 2, 70),
-(5, 'Vinay', 'Gehlot', 'vinaygehlot@gmail.com', '7845124589', '2023-05-20', 2, 62000.00, NULL, 2, 71);
+(1, 'Vikas', 'Godiya', 'vya@gmail.com', '9694643401', '2023-01-15', 1, 50000.00, NULL, NULL, 70),
+(2, 'Ashi', 'Phulwani', 'ani@gmail.com', '7300140241', '2023-02-20', 2, 60000.00, 2000.00, 1, 71),
+(3, 'Vishal', 'Soni', 'vni@gmail.com', '7073340691', '2023-03-10', 3, 70000.00, NULL, 1, 71),
+(4, 'Anish', 'Chouhan', 'auhan@gmail.com', '8954125478', '2023-04-05', 1, 55000.00, 1500.00, 2, 70),
+(5, 'Vinay', 'Gehlot', 'vit@gmail.com', '7845124589', '2023-05-20', 2, 62000.00, NULL, 2, 71);
 
 
 CREATE TABLE job_history (
