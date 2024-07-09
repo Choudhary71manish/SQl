@@ -21,4 +21,35 @@ CREATE TABLE persons (
 
 );
 
+-- sql foreign key on alter table
+
+alter table orders
+add foreign key (person_id) references persons(person_id);
+
+-- * to allow naming of a foreign key constraint 
+
+-- normal 
+CREATE TABLE Orders (
+    OrderID int NOT NULL,
+    OrderNumber int NOT NULL,
+    PersonID int,
+    PRIMARY KEY (OrderID),
+    CONSTRAINT FK_PersonOrder FOREIGN KEY (PersonID)
+    REFERENCES Persons(PersonID)
+);
+
+-- alter 
+alter table orders
+add constraint fk_personorder
+foreign key (person_id) references persons(person_id)
+
+
+-- drop foreign key
+--mysql
+alter table orders 
+drop foreign key fk_personorder;
+
+--sql oracle ms
+alter table orders 
+drop constraint fk_personoder;
 
